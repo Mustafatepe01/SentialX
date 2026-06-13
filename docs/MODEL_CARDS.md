@@ -65,8 +65,9 @@ vardiya raporu beklenmeden `fire-alerts` bildirim hattini tetikler.
 **Amac:** Tespit edilen ihlalin sahne ve risk baglamini dogal dilde
 aciklamaktir.
 
-**Cagirilma kosulu:** PPE veya yangin analizinden ihlal sonucu alindiginda
-Frame Worker tarafindan cagrilir.
+**Cagirilma kosulu:** Mevcut Frame Worker kodunda yangin analizinden ihlal
+sonucu alindiginda cagrilir. Temiz olaylarda ve yalnizca PPE ihlali bulunan
+olaylarda atlanir.
 
 **Girdi:** Ihlal goruntuleri, olay metadata'si ve mevcut tespit sonucu.
 
@@ -151,4 +152,3 @@ kaynaklarina erisildiginde bu belgeye eklenmelidir:
 
 Bu bilgiler tamamlanana kadar depo, tespit modellerinin tam olarak yeniden
 uretilebildigini iddia etmemektedir.
-

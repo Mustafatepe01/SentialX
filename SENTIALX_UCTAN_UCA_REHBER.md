@@ -24,10 +24,10 @@ Temel hedefleri:
 8. Vardiya bazli Turkce rapor ve PDF uretmek.
 9. Yangin gibi kritik olaylarda alarm olusturmak.
 
-Sistem su anda tek parca, tamamlanmis bir ticari urun degildir. Calisan
-prototipler, yerel demo otomasyonu ve bulut servisleri vardir; ancak tum
-bilesenlerin tek depoda, tek surumde ve eksiksiz test edilen bir urun olarak
-birlesmesi henuz tamamlanmamistir.
+Sistem su anda tamamlanmis bir ticari urun degildir. Edge Agent, kamera
+simulasyonu, Frame Worker, Fire Notifier, Supabase fonksiyonu, PageIndex RAG
+ve rapor servisleri bu depoda bir araya getirilmistir. PPE, yangin ve VLM
+model servislerinin agirliklari ile servis kaynaklari ise ayrica gereklidir.
 
 ## 2. Projedeki Kopyalar
 
@@ -42,6 +42,10 @@ Bu makinede iki onemli konum vardir:
 Burada:
 
 - `cloud_two_service`: RAG ve rapor servislerinin calisabilir kopyasi.
+- `cloud`: Frame Worker ve Fire Notifier servisleri.
+- `edge`: Edge Agent ve guvenli kamera simulasyonu ornekleri.
+- `supabase/functions`: Ihlal aktarim Edge Function'i.
+- `infrastructure`: Cloud SQL kamera yapilandirma migration'i.
 - `staging`: Birlesik proje aciklamasi ve durum raporu.
 - `SENTIALX_SUNUM_TEST_REHBERI.md`: Yerel sunum kullanim rehberi.
 
@@ -434,9 +438,9 @@ Frame Worker su servis URL'lerini bekler:
 - Fire detection: resimden yangin/acik alev alarmi.
 - VLM service: olay cevresi ve risk aciklamasi.
 
-Bu servislerin canli Cloud Run adresleri `system_config.json` ve dagitim
-scriptlerinde referans edilmektedir; ancak PPE, yangin ve VLM servislerinin
-kaynak kodlari bu birlesik calisma kopyasinda bulunmamaktadir.
+Bu servislerin canli Cloud Run adresleri dagitim scriptlerinde referans
+edilmektedir; ancak PPE, yangin ve VLM servislerinin kaynak kodlari ve model
+agirliklari bu depoda bulunmamaktadir.
 
 Bu nedenle sistemin bulut zincirini sifirdan kurmak icin bu uc servisin kaynak
 depolari veya container imajlari ayrica gereklidir.

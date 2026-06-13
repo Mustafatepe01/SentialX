@@ -18,6 +18,8 @@ env/
 .env.*
 !.env.example
 secrets.local.json
+settings.json
+cameras.json
 *.pem
 *.key
 service-account*.json
@@ -31,6 +33,11 @@ buffer/
 recordings/
 outputs/
 *.pdf
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.exe
 
 # Local review and collection material
 staging/

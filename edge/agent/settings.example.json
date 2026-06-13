@@ -1,0 +1,15 @@
+{
+  "customer_id": "demo-customer",
+  "institution_name": "Demo Facility",
+  "project_id": "YOUR_GCP_PROJECT_ID",
+  "bucket": "YOUR_FRAME_BUCKET",
+  "pubsub_topic": "sentialx-frames",
+  "edge_device_id": "edge-demo-01",
+  "config_api_url": "https://YOUR_FRAME_WORKER_URL",
+  "edge_service_account": "sentialx-edge@YOUR_GCP_PROJECT_ID.iam.gserviceaccount.com",
+  "config_timeout_seconds": 20,
+  "camera_retry_seconds": 10,
+  "retry_seconds": 30,
+  "max_outbox_gb": 10,
+  "jpeg_quality": 88
+}
