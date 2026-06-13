@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: pip
+    directory: /cloud_two_service/rag-service
+    schedule:
+      interval: weekly
+  - package-ecosystem: pip
+    directory: /cloud_two_service/report-service
+    schedule:
+      interval: weekly
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+

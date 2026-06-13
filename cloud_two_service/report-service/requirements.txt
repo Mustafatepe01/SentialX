@@ -1,0 +1,11 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+litellm==1.83.7
+python-dotenv==1.0.1
+pydantic==2.12.5
+httpx==0.28.1
+weasyprint==62.3
+reportlab==4.2.5
+redis==5.0.8
+google-cloud-storage==2.19.0
+google-auth==2.38.0

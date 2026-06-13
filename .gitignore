@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+secrets.local.json
+*.pem
+*.key
+service-account*.json
+credentials*.json
+
+# Runtime and generated files
+queue_state.json
+*.log
+logs/
+buffer/
+recordings/
+outputs/
+*.pdf
+
+# Local review and collection material
+staging/
+collect_sentialx.ps1
+SENTIALX_REPO_INCELEME_RAPORU_*.md
+SENTIALX_SUNUM_TEST_REHBERI.md
+SENTIALX_YAYIN_ACMA_LISTESI.md
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
