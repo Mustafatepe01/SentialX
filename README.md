@@ -61,6 +61,13 @@ Gercek API anahtarlarini, servis hesabi dosyalarini, `.env` dosyalarini veya
 kamera parolalarini Git'e eklemeyin. Ayrintilar icin
 `cloud_two_service/README.md` dosyasina bakin.
 
+## Model Bilgileri
+
+PPE, yangin, VLM, PageIndex RAG ve rapor LLM bilesenlerinin gorevleri,
+dogrulanabilen yapilandirmalari ve bilinen sinirlari
+[`docs/MODEL_CARDS.md`](docs/MODEL_CARDS.md) dosyasinda belgelenmistir.
+Olculmemis model basari ve performans degerleri bu belgeye eklenmemistir.
+
 ## Bilinen Sinirlar
 
 - Kuyruk endpoint'leri `QUEUE_BACKEND=file` ile Cloud Run uzerinde kalici
@@ -68,4 +75,3 @@ kamera parolalarini Git'e eklemeyin. Ayrintilar icin
 - GCS artifact adresleri `gs://` bicimindedir ve tarayicida dogrudan acilmaz.
 - RAG ve rapor kalitesi harici LLM kotasina ve yanitlarina baglidir.
 - Depo icin henuz bir acik kaynak lisansi secilmemistir.
-
