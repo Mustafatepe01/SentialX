@@ -1,7 +1,7 @@
 fastapi==0.115.0
 uvicorn==0.30.6
 litellm==1.83.7
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 pydantic==2.12.5
 httpx==0.28.1
 weasyprint==62.3
